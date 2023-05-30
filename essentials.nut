@@ -46,4 +46,4 @@ if(ClanStat[player.ID].InClan && Clan[clanID].TagEnabled) {
 /////// THAT's IT! \\\\\
 // Place the ClanSys.nut file correctly, and enjoy my clan system! :)
 
-
+//-> YOU DON'T HAVE TO COPY THIS FILE, AND CONNECT IT TO MAIN.NUT, JUST COPY THE STUFF INSIDE OF IT AND PASTE TO THEIR RESPECTIVE PLACES.
