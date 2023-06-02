@@ -42,6 +42,14 @@ if(ClanStat[player.ID].InClan && Clan[clanID].TagEnabled) {
     Message("[#47A992][[#ffffff]" + Clan[clanID].Tag + "[#47A992]]~" + player.Name + "[#47A992]: [#ffffff]" + text); // Displays player's chat message with clan tag if available
 }
 
+// Put this onPlayerSpawn
+
+if(ClanStat[player.ID].InClan) {
+  local clanID = ClanStat[player.ID].ID;
+  if(Clan[clanID].skinID != 0) player.Skin = Clan[clanID].skinID;
+  if(Clan[clanID].teamID != 0) player.Team = Clan[clanID].teamID;
+  }
+
 // Put this onPlayerCommand
 	onClanCommand(player, cmd, text)
 
